@@ -8,6 +8,7 @@ import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
 import { AppLayoutModule } from './layout/app-layout.module';
 
+import { EditorModule } from './editor/editor.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -17,6 +18,7 @@ import { AppLayoutModule } from './layout/app-layout.module';
     CoreModule,
     AppRoutingModule,
     AppLayoutModule,
+    EditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

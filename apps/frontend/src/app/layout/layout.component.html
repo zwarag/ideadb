@@ -1,0 +1,22 @@
+<mat-toolbar
+  color="primary"
+  class="mat-elevation-z2 layout-header"
+>
+  <button
+    class="header-img-button"
+    mat-button
+    routerLink="/"
+    routerLinkActive="router-link-active"
+  >
+    <img src="assets/img/idea_2.svg" alt="logo" />
+    <span>IdeaDB</span>
+  </button>
+</mat-toolbar>
+
+<div class="content-wrapper">
+  <ng-content [class]="'content'"></ng-content>
+</div>
+
+<footer>
+  <span>footer</span>
+</footer>

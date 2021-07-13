@@ -1,0 +1,7 @@
+<h1 *ngIf="!isEditing" (click)="isEditing = true">{{ title }}</h1>
+<input
+  *ngIf="isEditing"
+  [(ngModel)]="title"
+  (keyup.enter)="isEditing = false"
+  (blur)="isEditing = false"
+/>

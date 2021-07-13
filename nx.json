@@ -14,12 +14,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "OTg4ODc3YjktZTg3OS00YWIyLTkyMTUtMGNiNGIxMDUwZjcwfHJlYWQtd3JpdGU=",
         "canTrackAnalytics": false,
         "showUsageWarnings": true
@@ -40,9 +35,13 @@
     },
     "frontend-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "frontend"
-      ]
+      "implicitDependencies": ["frontend"]
+    },
+    "ideadb-editor": {
+      "tags": ["ui", "editor"]
+    },
+    "interfaces": {
+      "tags": ["interfaces"]
     }
   }
 }
