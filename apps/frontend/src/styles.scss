@@ -16,3 +16,7 @@ body {
 router-outlet + * {
   flex: 1;
 }
+
+.overflowY {
+  overflow-y:auto;
+}
