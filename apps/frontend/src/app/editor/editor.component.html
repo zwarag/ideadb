@@ -1,0 +1,22 @@
+<mat-toolbar-row>
+  <span class="nav-spacer"></span>
+  <ngx-editor-menu
+    *ngIf="editor"
+    [editor]="editor"
+    [toolbar]="toolbar"
+  ></ngx-editor-menu>
+  <span class="nav-spacer"></span>
+</mat-toolbar-row>
+<div class="editor-card">
+  <div class="editor-card-content">
+    <ngx-editor
+      [editor]="editor"
+      [(ngModel)]="html"
+      [placeholder]="'Type here...'"
+    ></ngx-editor>
+  </div>
+  <div class="action-button" [align]="'end'">
+    <button mat-stroked-button (click)="cancel()">Cancel</button>
+    <button mat-flat-button color="primary" (click)="save()">Save</button>
+  </div>
+</div>

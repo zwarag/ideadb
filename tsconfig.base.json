@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
+    "checkJs": true,
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -14,7 +15,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ideadb/ideadb-editor": ["libs/ideadb-editor/src/index.ts"],
+      "@ideadb/interfaces": ["libs/interfaces/src/index.ts"]
+    }
   },
+  "include": [
+    "./libs/*/src/**/*",
+    "./apps/*/src/**/*"
+  ],
   "exclude": ["node_modules", "tmp"]
 }
