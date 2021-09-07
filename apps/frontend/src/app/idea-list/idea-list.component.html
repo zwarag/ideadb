@@ -1,0 +1,17 @@
+<div class="accordion-wrapper">
+  <mat-accordion multi>
+    <mat-expansion-panel *ngFor="let idea of ideas">
+      <mat-expansion-panel-header>
+        <mat-panel-title>{{ idea.title }}</mat-panel-title>
+        <mat-panel-description>
+          created: {{ idea.createdAt | date }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>{{ idea.description }}</p>
+      <mat-action-row>
+        <button mat-stroked-button color="warn" (click)="delete()"><mat-icon>delete</mat-icon></button>
+        <button mat-stroked-button (click)="edit()"><mat-icon>edit</mat-icon></button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

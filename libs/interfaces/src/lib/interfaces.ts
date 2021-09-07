@@ -7,3 +7,10 @@ export interface Idea {
   version: number;
   tags: string[];
 }
+
+export type IdeaList = Idea[];
+
+export interface Panelable<T> {
+  data: T;
+  expanded: boolean;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
+
 @Component({
   selector: 'ideadb-layout',
   templateUrl: './layout.component.html',

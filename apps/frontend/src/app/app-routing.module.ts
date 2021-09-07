@@ -1,10 +1,15 @@
 import { EditorComponent } from './editor/editor.component';
+import { IdeaListComponent } from './idea-list/idea-list.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path: 'home',
+    component: IdeaListComponent,
+  },
+  {
+    path: 'idea',
     component: EditorComponent,
   },
   {
